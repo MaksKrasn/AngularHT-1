@@ -4,4 +4,5 @@ export class Person{
     lastName: string = '';
     middleName: string = '';
     description: string = '';
+    photo: string = '';
 }
