@@ -17,7 +17,7 @@ export class AppComponent {
     this.person.lastName = 'Krasnikov';
     this.person.middleName = 'Eduardovich';
     this.person.description = 'description';
-    this.person.photo = './6.jpg'
+    this.person.photo = '/app/images/DSC_0012.JPG'
   }
 
 }
