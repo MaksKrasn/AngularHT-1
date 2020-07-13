@@ -10,11 +10,12 @@ export class AppComponent {
   title = 'My resume';
 
   person: Person = new Person;
-  createPerson(){
+  createPerson(): Person{
     this.person.id = 1;
     this.person.firstName = 'Maksym';
     this.person.lastName = 'Krasnikov';
     this.person.middleName = 'Eduardovich';
     this.person.description = 'description';
+    return this.person;
   }
 }
