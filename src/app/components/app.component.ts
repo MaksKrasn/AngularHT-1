@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Person} from '../models/Person'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'My first project Angular';
+  title = 'My resume';
+
+  person: Person = new Person;
+  createPerson(){
+    this.person.id = 1;
+    this.person.firstName = 'Maksym';
+    this.person.lastName = 'Krasnikov';
+    this.person.middleName = 'Eduardovich';
+    this.person.description = 'description';
+  }
 }
