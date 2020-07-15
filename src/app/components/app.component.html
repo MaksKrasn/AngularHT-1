@@ -1,6 +1,17 @@
-<h1>My work way</h1>
+<h1>Резюме</h1>
 
 <div class="main">
     <p><img [src]="person.photo" class="img"></p>
-    <h2>{{person.firstName + ' ' + person.lastName}}</h2>
+    <div class = "person-name">
+        <h2>{{person.lastName}}</h2>
+        <h2>{{person.firstName}}</h2>
+        <h2>{{person.middleName}}</h2>
+        <h2>Дата рождения: {{person.birthData}}</h2>
+    </div> 
+</div>
+<h2>Профессиональная деятельность:</h2>
+<div class = "work-header" *ngFor="let pos of positions">
+    <span class = "work1">{{'Начало: ' + pos.startData + '  Конец: ' + pos.finishData + '  Должность:  ' + pos.positionName}}</span>
+    <p class="work1">Описание работы: {{pos.description}}</p>
+    
 </div>

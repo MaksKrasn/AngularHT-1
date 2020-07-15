@@ -18,9 +18,10 @@ export class AppComponent {
   
   constructor(){
     this.person.id = 1;
-    this.person.firstName = 'Maksym';
-    this.person.lastName = 'Krasnikov';
-    this.person.middleName = 'Eduardovich';
+    this.person.firstName = 'Максим';
+    this.person.lastName = 'Красников';
+    this.person.middleName = 'Эдуардович';
+    this.person.birthData = '06.02.1972'
     this.person.positions = this.positions;
     this.person.photo = '/app/images/MyFoto.jpg'
   }
