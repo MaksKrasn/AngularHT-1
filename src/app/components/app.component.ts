@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {Person} from '../models/Person'
+import {Person} from '../models/Person';
+import {Job} from '../models/Job';
 
 @Component({
   selector: 'app-root',
@@ -16,8 +17,8 @@ export class AppComponent {
     this.person.firstName = 'Maksym';
     this.person.lastName = 'Krasnikov';
     this.person.middleName = 'Eduardovich';
-    this.person.description = 'description';
-    this.person.photo = '/app/images/MyFoto.JPG'
+    //this.person.positions
+    this.person.photo = '/app/images/MyFoto.jpg'
   }
 
 }
